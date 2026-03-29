@@ -11,6 +11,7 @@ class IosMcpServer < Formula
   def install
     system "swift", "build", "-c", "release", "--disable-sandbox"
     bin.install ".build/release/ios-mcp-server"
+    bin.install ".build/release/ios-mcp-server_IOSMCPServer.bundle"
   end
 
   def post_install
