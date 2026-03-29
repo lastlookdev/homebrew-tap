@@ -2,7 +2,7 @@ class IosMcpServer < Formula
   desc "MCP server for controlling iOS simulators and apps via XCUITest"
   homepage "https://github.com/lastlookdev/ios-mcp-server"
   url "https://github.com/lastlookdev/ios-mcp-server/archive/refs/tags/0.1.0.tar.gz"
-  sha256 "fda1dd6dc43388203e3f7ec93fd6062d521428e9f4b1e8a428329c4ad3a44dd5"
+  sha256 "c9dc51875b86c35d33a13a077c95a58d15cd38e2e7a058437f9140b70e3c4831"
   license "MIT"
 
   depends_on xcode: ["15.0", :build]
