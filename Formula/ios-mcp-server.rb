@@ -1,8 +1,8 @@
 class IosMcpServer < Formula
   desc "MCP server for controlling iOS simulators and apps via XCUITest"
   homepage "https://github.com/lastlookdev/ios-mcp-server"
-  url "https://github.com/lastlookdev/ios-mcp-server/archive/refs/tags/0.1.0.tar.gz"
-  sha256 "40d57f41ed7bbd295f2b3d73ac8e79c86eaa2542219ca523d087f074d6d40307"
+  url "https://github.com/lastlookdev/ios-mcp-server/archive/refs/tags/0.1.1.tar.gz"
+  sha256 "975de88002635da988b1a6c26e4a6eb14c097755ba54f6032e69010620052736"
   license "MIT"
 
   depends_on xcode: ["15.0", :build]
@@ -21,7 +21,7 @@ class IosMcpServer < Formula
 
   def caveats
     <<~EOS
-      To start the server as a background service and add to Claude Code:
+      To start the server as a background service and add to Claude Code and Codex:
         ios-mcp-server install
 
       To remove:
@@ -33,6 +33,6 @@ class IosMcpServer < Formula
   end
 
   test do
-    assert_match "Usage:", shell_output("#{bin}/ios-mcp-server help", 0)
+    assert_match "Usage:", shell_output("#{bin}/ios-mcp-server help")
   end
 end
